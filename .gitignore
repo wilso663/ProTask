@@ -20,6 +20,9 @@ ssl/
 # Mono auto generated files
 mono_crash.*
 
+#sqlite db
+*.db
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
