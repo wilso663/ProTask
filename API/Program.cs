@@ -17,7 +17,7 @@ builder.Services.AddCors();
 var app = builder.Build();
 
 // Configure request pipeline
-app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5231"));
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 
 app.MapControllers();
 

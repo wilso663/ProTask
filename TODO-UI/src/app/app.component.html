@@ -1,1 +1,15 @@
-<h1>{{title}}</h1>
+<div class="background">
+
+</div>
+<div class="app-container">
+  <div class="headline-container">
+    <div class="headline">
+      <h1>{{title}}</h1>
+      <img src="../assets/images/icon-sun.svg"/>
+    </div>
+    
+  </div>
+    <ul>
+      <li *ngFor="let user of users">{{user.id}} - {{user.userName}}</li>
+    </ul>
+</div>

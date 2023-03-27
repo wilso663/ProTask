@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient, private todoItemServce: TodoItemService){ }
 
   ngOnInit(): void {
-    this.http.get("https://localhost:7283/users").subscribe({
+    this.http.get("https://localhost:7283/api/users").subscribe({
       next: response => this.users = response,
       error: (err) => {console.log(err)},
       complete: () => {} 

@@ -12,10 +12,4 @@ export class TodoItemService {
 
   constructor(private http: HttpClient) { }
 
-  getTodoItems() {
-    if(this.todos.length > 0) return of(this.todos);
-
-
-
-  }
 }

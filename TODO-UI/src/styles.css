@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+/* Typography import */
+@import 'google-fonts.css';
+
+/* Boilerplate, removing implicit padding, settings images to block and container size, remove text size adjust, smooth scroll */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ol,ul {
+  padding-left: none;
+}
+
+a {
+  text-underline-position: under;
+  text-decoration-thickness: 8;
+}
+
+/* background and fonts */
+body {
+  background-color: #161620;
+  color: #fcfcfe;
+  font-family: 'Roboto', sans-serif;
+}
