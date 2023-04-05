@@ -2,14 +2,43 @@
 
 </div>
 <div class="app-container">
-  <div class="headline-container">
-    <div class="headline">
-      <h1>{{title}}</h1>
-      <img src="../assets/images/icon-sun.svg"/>
+    <div class="header">
+      <h1 class="header-left">{{title}}</h1>
+      <div class="header-right">
+        <img class="theme-icon" src="../assets/images/icon-sun.svg"/>
+        <a href="#" class="sign-out-btn">Sign out</a>
+      </div>
     </div>
-    
-  </div>
-    <ul>
+    <!-- <ul>
       <li *ngFor="let user of users">{{user.id}} - {{user.userName}}</li>
-    </ul>
+    </ul> -->
+    <div class="todo-input-container">
+      <div class="todo-input-btn"></div>
+      <input id="addTodoInput"
+      placeholder="Create a new todo..."  
+      class="todo-input"/>
+    </div>
+    <div class="todo-list-container">
+      <ul class="todo-list">
+        <li class="todo-list-item">
+          <div class="todo-input-btn completed-check">
+          </div>
+          <p class="todo-description completed-text">Do Thing</p>
+        </li>
+        <li class="todo-list-item">
+          <div class="todo-input-btn"></div>
+          Do Thing
+        </li>
+      </ul>
+      <div class="todo-options-container">
+        <p class="todos-number-of">2 items left</p>
+        <ul class="todo-statuses">
+          <li class="todo-status">All</li>
+          <li class="todo-status">Active</li>
+          <li class="todo-status">Completed</li>
+        </ul>
+        <p class="todos-clear-complete">Clear Completed</p>
+      </div>
+    </div>
+    <p class="instructions">Drag and drop to reorder list</p>
 </div>

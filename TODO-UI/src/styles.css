@@ -29,13 +29,16 @@ ol,ul {
 }
 
 a {
-  text-underline-position: under;
-  text-decoration-thickness: 8;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: rgb(0, 140, 255);
 }
 
 /* background and fonts */
 body {
-  background-color: #161620;
+  background-color: #171723;
   color: #fcfcfe;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
