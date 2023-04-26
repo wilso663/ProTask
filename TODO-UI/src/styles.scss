@@ -1,44 +1,37 @@
-/* Typography import */
 @import 'google-fonts.css';
+/* Body background color variables for themes */
+:root {
+  --global-clr: #3f51b5;
+}
 
-/* Boilerplate, removing implicit padding, settings images to block and container size, remove text size adjust, smooth scroll */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html {
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+* {
+  margin: 0;
+  font: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-        scroll-behavior: smooth;
-  }
-}
-
-img {
+img, svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
-ol,ul {
-  padding-left: none;
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+::ng-deep {
+  margin: 0;
+  padding: 0;
+}
+body { 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  font-size: 1.125rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  color: rgb(0, 140, 255);
-}
-
-/* background and fonts */
-body {
-  background-color: #171723;
-  color: #fcfcfe;
-  font-family: 'Arial', sans-serif;
-}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
